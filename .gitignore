@@ -1,0 +1,9 @@
+.vscode
+.venv
+.env
+__pycache__/
+*.pyc
+.cache/
+pytest_cache/
+logs/
+news.db
