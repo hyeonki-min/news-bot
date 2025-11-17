@@ -4,11 +4,17 @@
     "dockerfile": "Dockerfile",
     "context": "."
   },
-  "forwardPorts": [8000],
-  "postCreateCommand": "uv sync && make commit",
+  "forwardPorts": [8000, 3000],
+  "workspaceFolder": "/workspaces/news-bot",
+
+  "postCreateCommand": "uv sync && npm install --prefix frontend",
+
   "remoteUser": "root",
+
   "features": {
-    "ghcr.io/devcontainers/features/git:1": {}
-  },
-  "workspaceFolder": "/workspaces/news-bot"
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  }
 }
