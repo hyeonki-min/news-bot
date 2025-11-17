@@ -10,6 +10,7 @@ class NewsMapper:
             description=entity.description,
             link=entity.link,
             original_link=entity.original_link,
+            topic=entity.topic,
             pub_date=entity.pub_date,
         )
 
@@ -20,5 +21,6 @@ class NewsMapper:
             description=model.description,
             link=model.link,
             original_link=model.original_link,
+            topic=model.topic,
             pub_date=model.pub_date,
         )
