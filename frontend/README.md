@@ -25,7 +25,7 @@ frontend/
 ## 개발 실행
 ```
 npm install
-npm run dev
+npm run start
 ```
 
 ## 기술 스택

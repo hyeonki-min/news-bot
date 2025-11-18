@@ -100,7 +100,7 @@ uvicorn src.app.main:app --timeout-graceful-shutdown 30
 ```
 cd frontend
 npm install
-npm run dev
+npm run start
 ```
 
 ### 디렉토리 구조
